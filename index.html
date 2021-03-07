@@ -1,0 +1,90 @@
+<!DOCTYPE html><!--문서의 형식을 규정하는 부분 HTML 문서로 작성할 것이다-->
+<html lang="en"><!--HTML문서의 시작.lang(language)는 영어문서이다.-->
+<head><!--heae : 이 문서의 정보를 갖고 있는 공간--> 
+    <meta charset="UTF-8"><!--charset(char-character : 문자+set : 세팅) = "utf-8" : 비영어권 언어(한글,일어,중문,아랍어 포함하여 그 밖의 기타 24개국 언어)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author"content="임지민">
+    <meta name="Keywords"content="화이트데이,사탕,선물,연인">
+    <meta name="Description" content="이 사이트는 기초홈페이지를 구성하기 위한 사이트입니다.">
+    <meta name="Generator"content="visual studio code">
+    <title>html_시작</title>
+</head>
+<body>
+  안녕하세요! 저는 임지민입니다. &copy; ⓒ> ＞<br>
+  HTML 홈페이지는 HTML문서와 CSS로 구성됩니다.<br>
+  HTML&nbsp;홈페이지는&nbsp;HTML문서와&nbsp;CSS로&nbsp;구성됩니다.
+  <!--&nbsp;는 문장 연결과 과정상 강제로 띄어쓴 것처럼 보이게 하는 특수문자 (단어와 단어사이를 연결한다)-->
+
+
+  <!--블록 성질 : 한줄을 모두 차지한다.다음에 오는 영역은 줄바꿈이 일어난다.(레고블록)-->
+<h2>타이틀</h2><p>문장내용</p>
+
+<!--안라인 성질 : 줄바꿈이 일어나지 않는 성질(인라이스케이트의 바퀴)-->
+<a href="https://www.naver.com">네이버 바로가기</a>
+<a href="https://www.daum.net">다음 바로가기</a>
+
+<!--헤드라인 태그 : <hn>태그 (<h1>~<h6>) 숫자의 단위가 크면 클수록 비중이 작은 제목을 가리킨다.-->
+<h1>타이틀1</h1>
+<h2>타이틀2</h2>
+<h3>타이틀3</h3>
+<h4>타이틀4</h4>
+<h5>타이틀5</h5>
+<h6>타이틀6</h6>
+<!-- <h7>타이틀7</h7>
+<h8>타이틀8</h8> -->
+
+
+
+<!--문단을 가리키는 <p>태그 : 블록성질-->
+<p>(서울=뉴스1) 박재우 기자 = 미국·일본·호주·인도 간 안보협의체인<br> '쿼드'(Quad)가 곧 사상 첫 정상회의가 열리는 가운데 한국 정부는 쿼드에 거리를 두고 있다. 한국 정부가 미중 사이에서 중심을 잡지 못하고 있다는 우려의 목소리가 나온다.</p>
+<p>블룸버그 통신에 따르면 스콧 모리슨 호주 총리는 지난 5일 기자들과 만나 쿼드 4개국이 중국의 영향력 확대에 맞서기 위해 화상 방식으로 사상 첫 정상회의를 연다고 밝혔다. 요미우리신문도 이날 복수의 일본 정부 관계자를 인용해 쿼드 첫 정상회담이 이달 중순 열린다고 보도했다.</p>
+
+<!--주소를 작성하는 <address>태그-->
+<address>서울시 서초구 반포1동 734-29</address>
+
+<!--구분선을 구성하는 <hr> : 블록요소(빈요소라서 시작태그만 작성한다.)-->
+<hr>
+
+<!--인용문 : --> blockquote(블록성질),q(인라인성질)
+<blockquote cite="https://blog.naver.com?code=12345">스티브잡스의 명언</blockquote>
+<!--인용문 blockquote>태그는 들여쓰기(text-indent)가 기본으로 적용된다.-->
+<q cite="https://blog.naver.com?code=12345">1.시간을 아껴라.</q>
+<q cite="https://blog.naver.com?code=12345">2.아이디어 생산을 항상 고민해라</q>
+
+
+<!--텍스트 관련 태그-->
+<h3>강조파트</h3>
+<em>강조1</em>
+<i>강조2</i>
+<strong>강조3</strong>
+<b>강조4</b>
+
+    <p>웹사이트는 <b> html5</b>,<b>css3</b>,<b>Javascript</b>로 구성되어 있다.</p>
+
+<p>문장 내용의 <h3>강조</h3></p>
+<!--블록 성질을 갖고 있는 말단 태그에 또 다른 말단 태그를 넣었을 경우,레이아웃을 해치는 경우가 존재한다.-->
+
+<h3>취소선</h3>
+<p><del>26,000원</del>▶<b>18,000원</b></p>
+
+<h3>밑줄</h3>
+<p>이용약관 변경사항 : <ins>수수료 17%</ins></p>
+
+<h3>위첨자, 아래첨자</h3>
+<p>2<sup>4</sup>=16</p>
+<p>C<Sub>6</Sub>H<sub>6</sub>:벤젠고리</p>
+
+<h3>기준 사이즈보다 작게 구성할 수 있는 태그</h3>
+<p>$99<small>.99</small></p>
+
+<h3>이미지 불러오기</h3>
+<img src="img/img_01.gif"alt="카카오 프렌즈 이미지" style="height:100px;">
+
+<!--<img>태그는 width와 height의 값을 동시에 조정하는 것이 아님(이미지는 본래의 가로대비 세로의 배율(Ration)를 존중해주어야 홀쭉이 또는 납작한 이미지로 만들어 지지 않기 위함). 둘중의 하나만 사용할 것-->
+<img src="img/img_02.jpg"alt="카카오 프렌즈 이미지" style="height: 270px;">
+<img src="img/img_03.png"alt="카카오 프렌즈 이미지" style="height: 160px;">
+
+<!--<img>태그는 인라인 성질을 갖고 있음. 연속적으로 작성시 콘텐츠의 하단부분으로 정렬된다.(수직방향)-->
+</body>
+</html>
